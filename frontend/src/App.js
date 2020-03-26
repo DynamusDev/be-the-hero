@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes'
+
+// JSX (Javascript e XML) 
 
 function App() {
+
+  // const [counter, setCounter] = useState(0);
+
+  // Array [valor, funcaoDeAtualizacao]
+
+  // function increment() {
+  //   setCounter(counter +1);
+  // };
+  // function subtrair() {
+  //   if(counter==0){
+  //     setCounter(counter);
+  //   }else{
+  //     setCounter(counter -1);
+  //   }
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello OmniStack!!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes/>
+      {/* <Header>Contador: {counter * 8}</Header> */}
+      {/* <button onClick={increment}>Incrementar</button> */}
+      {/* <button onClick={subtrair}>Subtrair</button> */}
     </div>
   );
 }
